@@ -1,9 +1,9 @@
-public class timeSeriesEntry {
+public class TimeSeriesEntry {
 
     double data;
     long time;
 
-    public timeSeriesEntry(long t, double d) {
+    public TimeSeriesEntry(long t, double d) {
         data = d;
         time = t;
     }

@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class timeSeries {
+public class TimeSeries {
 
-    ArrayList<timeSeriesEntry> entryList = new ArrayList<TimeSeriesEntry>();
+    ArrayList<TimeSeriesEntry> entryList = new ArrayList<TimeSeriesEntry>();
 
    
     public boolean add(TimeSeriesEntry e) {
@@ -23,7 +23,7 @@ public class timeSeries {
      * @param t Timestamp
      * @param delta Margin of Error
      */
-    public timeSeriesEntry get(long t, long delta) {
+    public TimeSeriesEntry get(long t, long delta) {
         long bestDelta = Math.abs(entrylist.get(0).getTime() - (time+delta));
         long currentDelta;
         long bestEntry = 0;
@@ -45,7 +45,7 @@ public class timeSeries {
         }
 
         if(bestDelta > delta) {
-            //throw exception here
+            throw new Exception("NoObservationException");
         }
 
         return entryList.get(bestEntry);
@@ -58,9 +58,21 @@ public class timeSeries {
                 return true;
             }
         }
-        
         return false;
     }
 
+
+    public int delete(long start, long end) {
+        int counter = 0;
+        
+        for(int i = 0; i < entryList.size(); i++) {
+            if(entryList.get(i).getTime >= start && entryList.get(i).getTime <= end) {
+                entryList.remove(i);
+                counter++;
+            }
+        }
+
+        return counter;
+    }
 
 }

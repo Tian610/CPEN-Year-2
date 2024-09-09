@@ -1,7 +1,9 @@
-public class main {
+public class Main {
     public static void main(String[] args) {
 
-        TimeSeries Series1 = new TimeSeries();
-        
+        System.out.println("Hello World");
+
+        TimeSeries Series = new TimeSeries();
     }
 }
+
