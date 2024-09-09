@@ -1,10 +1,13 @@
-package Tutorials.Tutorial_1;
+package tutorials.tutorial1;
 
 public class timeSeriesEntry {
 
+    double data;
+    long time;
+
     public timeSeriesEntry(long t, double d) {
-        double data = d;
-        long time = t;
+        data = d;
+        time = t;
     }
 
     public long getTime() {
