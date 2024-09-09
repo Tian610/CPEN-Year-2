@@ -1,5 +1,3 @@
-package tutorials.tutorial1;
-
 public class timeSeriesEntry {
 
     double data;
