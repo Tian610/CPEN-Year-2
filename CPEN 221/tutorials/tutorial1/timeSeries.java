@@ -6,6 +6,12 @@ public class TimeSeries {
     ArrayList<TimeSeriesEntry> entryList = new ArrayList<TimeSeriesEntry>();
 
    
+     /**
+     * Adds a given TimeSeriesEntry to the TimeSeries. 
+     * 
+     * @param e - TImeSeriesEntry to be added to the TimeSeries
+     * @return Returns True if successfully added. False otherwise
+     */
     public boolean add(TimeSeriesEntry e) {
         for(int i = 0; i < entryList.size(); i++) {
             if(entryList.get(i).getTime == e.getTime()) {
@@ -17,11 +23,14 @@ public class TimeSeries {
         return true;
     }
 
-     /*
-     * Adds a given TimeSeriesEntry to the TimeSeries. 
+
+    /**
      * 
-     * @param t Timestamp
-     * @param delta Margin of Error
+     * 
+     * @param t - Timestamp
+     * @param delta - Margin of Error
+     * @return Returns the TimeSeriesEntry at the Timestamp
+     * @throws NoObservationException
      */
     public TimeSeriesEntry get(long t, long delta) {
         long bestDelta = Math.abs(entrylist.get(0).getTime() - (time+delta));
@@ -64,7 +73,7 @@ public class TimeSeries {
 
     public int delete(long start, long end) {
         int counter = 0;
-        
+
         for(int i = 0; i < entryList.size(); i++) {
             if(entryList.get(i).getTime >= start && entryList.get(i).getTime <= end) {
                 entryList.remove(i);
