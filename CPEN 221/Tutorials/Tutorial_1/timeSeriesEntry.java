@@ -1,3 +1,5 @@
+package Tutorials.Tutorial_1;
+
 public class timeSeriesEntry {
 
     public timeSeriesEntry(long t, double d) {

@@ -3,8 +3,9 @@ import java.util.Collections;
 
 public class timeSeries {
 
-    ArrayList<TimeSeriesEntry> entryList = new ArrayList<TimeSeriesEntry>();
+    ArrayList<timeSeriesEntry> entryList = new ArrayList<TimeSeriesEntry>();
 
+   
     public boolean add(TimeSeriesEntry e) {
         for(int i = 0; i < entryList.size(); i++) {
             if(entryList.get(i).getTime == e.getTime()) {
@@ -16,8 +17,14 @@ public class timeSeries {
         return true;
     }
 
+     /*
+     * Adds a given TimeSeriesEntry to the TimeSeries. 
+     * 
+     * @param t Timestamp
+     * @param delta Margin of Error
+     */
     public timeSeriesEntry get(long t, long delta) {
-        long bestDelta = delta;
+        long bestDelta = Math.abs(entrylist.get(0).getTime() - (time+delta));
         long currentDelta;
         long bestEntry = 0;
         
@@ -37,10 +44,23 @@ public class timeSeries {
 
         }
 
-        if(bestDelta == delta) {
+        if(bestDelta > delta) {
             //throw exception here
         }
 
         return entryList.get(bestEntry);
     }
+
+    public boolean delete(long t) {
+        for(int i = 0; i < entryList.size(); i++) {
+            if(entryList.get(i).getTime == t) {
+                entryList.remove(i);
+                return true;
+            }
+        }
+        
+        return false;
+    }
+
+
 }
