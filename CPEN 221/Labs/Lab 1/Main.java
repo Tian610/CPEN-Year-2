@@ -1,3 +1,5 @@
+import stringchopping.StringChopping;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -12,6 +14,13 @@ public class Main {
 
         // System.out.println("r = " + WirelessSignalStrength.rss(s,distance,x,a));
 
-        
+        String s = "aaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaa";
+        //s = "Chop the Head of Marie Antoinette";
+
+        String[] x = StringChopping.allPossibleDicings(s);
+
+        for(int i = 0; i<x.length; i++) {
+            System.out.println(x[i]);
+        }
     }
 }
