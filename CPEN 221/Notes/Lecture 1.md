@@ -24,16 +24,3 @@ OOP is based around the concept of creating *objects*, each containing its own v
 
 [//]: # (This may be the m`ost platform independent comment)
 
-<p style="color:cyan">omg cyan text</p>
-
----
-
-``` java    
-public class Main {
-
-    public static void main(String[] args) {
-        System.out.println("Hello World")
-    }
-}
-```
-
