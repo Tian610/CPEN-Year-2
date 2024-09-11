@@ -7,7 +7,7 @@ public class lab0 {
         System.out.print("\033[H\033[2J");  
         System.out.flush();  
         
-        String str = "qwertyuiopasdfghjkl";
+        String str = "ONION";
         String str1 = str.toLowerCase();
         String[] output = {"","",""};
         String outputString = "";
@@ -17,6 +17,11 @@ public class lab0 {
             str1 = str.toLowerCase();
             int length = (int)Math.ceil(str1.length()/3.0);
             outputString += i+": ";
+
+            if(str1.indexOf(i) == -1) {
+                outputString += "NO";
+            }
+
             
             while(str1.length()>1) {
 
@@ -47,10 +52,7 @@ public class lab0 {
             
             }
             
-            if(str.indexOf(i) == -1) {
-                outputString += "NO";
-            }
-
+            
             outputString += ", \n";
 
         }

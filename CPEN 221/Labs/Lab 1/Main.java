@@ -14,8 +14,7 @@ public class Main {
 
         // System.out.println("r = " + WirelessSignalStrength.rss(s,distance,x,a));
 
-        String s = "aaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaa";
-        //s = "Chop the Head of Marie Antoinette";
+        String s = "ONION";
 
         String[] x = StringChopping.allPossibleDicings(s);
 

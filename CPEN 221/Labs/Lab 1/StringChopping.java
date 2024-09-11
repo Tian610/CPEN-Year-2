@@ -1,5 +1,7 @@
 package stringchopping;
 
+import java.util.Arrays;
+
 public class StringChopping {
 
     /**
@@ -10,28 +12,31 @@ public class StringChopping {
      */
     public static String chopString(String s, char segment) {
 
-        // int length = (int)Math.ceil(s.length()/3.0);
-        // segment = Character.toLowerCase(segment);
+        if(s.length()<=1) {
+            return s;
+        }
+
+        int length = (int)Math.ceil(s.length()/3.0);
+        segment = Character.toLowerCase(segment);
         
-        // String[] output = new String[3];
+        String[] output = new String[3];
 
-        // output[0] = input.substring(0, length);
-        // output[1] = input.substring(length, input.length()-length);
-        // output[2] = input.substring(input.length()-length, input.length());
+        output[0] = s.substring(0, length);
+        output[1] = s.substring(length, s.length()-length);
+        output[2] = s.substring(s.length()-length, s.length());
 
-        // if(segment=="h") {
-        //     output[2] = "";
+        if(segment=='h') {
+            output[0] = "";
 
-        // } else if(segment=="m") {
-        //     output[0] = "";
+        } else if(segment=='m') {
+            output[1] = "";
 
-        // } else if(segment=="t") {
-        //     output[0] = "";
+        } else if(segment=='t') {
+            output[2] = "";
             
-        // }
+        }
 
-        // return output[0] + output[1] + output[2];
-        return NULL;
+        return output[0] + output[1] + output[2];
     }
 
     /**
@@ -43,18 +48,33 @@ public class StringChopping {
      */
     public static String diceStringTo(String s, char target) {
         
-        // int segmentLength = (int)Math.ceil(s.length()/3.0);
-        // String chopSequence = "";
+        String chopSequence = "";
+        char segment;
 
-        // if(s.indexOf(target)<segmentLength) {
-        //     chopSequence+= "T";
-        // } else if (s.indexOf(target) > s.length()-segmentLength) {
-        //     chopSequence+= "H";
-        // } else if 
+        if(s.indexOf(target) == -1) {
+            return "NO";
+        }
 
+        while(s.length()>1) {
+            int segmentLength = (int)Math.ceil(s.length()/3.0);
+                if(s.indexOf(target)<segmentLength) { // Found letter in head
+                    chopSequence+= "T";
+                    segment = 't';
 
-        // return "";
-        return NULL;
+                } else if (s.indexOf(target) > s.length()-segmentLength) { // In tail
+                    chopSequence+= "H";
+                    segment = 'h';
+
+                } else { // In middle
+                    chopSequence+= "H";
+                    segment = 'h';
+                }
+
+            s = chopString(s, segment);
+    }
+
+    return chopSequence;
+
     }
 
     /**
@@ -66,53 +86,18 @@ public class StringChopping {
      * with targets from 'a' to 'z', in that order
      */
     public static String[] allPossibleDicings(String s) {
-        String str = s;
-        String str1 = str.toLowerCase();
-        str1 = str1.replaceAll("\\s+","");
-        String[] output = {"","",""};
+
+        //s = s.replaceAll("\\s+","");
+        //s = s.toLowerCase();
         String[] output1 = new String[26];
+        String s1 = "";
+        
         for(char i = 'a'; i <= 'z'; i++) {
-            String outputString = "";
-            str1 = str.toLowerCase();
-            int length = (int)Math.ceil(str1.length()/3.0);
-            
-            while(str1.length()>1) {
-
-                output[0] = str1.substring(0, length);
-                output[1] = str1.substring(length, str1.length()-length);
-                output[2] = str1.substring(str1.length()-length, str1.length());
-
-                if(output[2].indexOf(i) != -1) {
-
-                    outputString += "H";
-                    output[0] = "";
-
-                } else if(output[1].indexOf(i) != -1) {
-
-                    outputString += "H";
-                    output[0] = "";
-
-                } else if(output[0].indexOf(i) != -1) {
-                    
-                    outputString += "T";
-                    output[2] = "";
-                    
-                } else {
-                    break;
-                }
-
-                str1 = output[0] + output[1] + output[2];
-                //outputString += "("+str1+")";
-                length = (int)Math.ceil(str1.length()/3.0);
-            
-            }
-            
-            if(str.indexOf(i) == -1) {
-                outputString += "NO";
-            }
-
-            output1[i-97] = outputString;
+            s1 = s;
+            output1[i-'a'] = diceStringTo(s1, i);
         }
+
+        System.out.println(Arrays.toString(output1));
 
         return output1;
     }
