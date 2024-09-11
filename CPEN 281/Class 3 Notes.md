@@ -19,7 +19,7 @@ Revise the following Email:
 
 ### Original
 
-> I absolutely have to have to have the latest claims by Friday — no ids, ands, or buts. I find it difficult to understand why so simple a request goes unnoticed until the deadline has passed, especially when the survivial of our department depends on ongoing analysis of these important files for our company.
+> I absolutely have to have to have the latest claims by Friday — no ids, ands, or buts. I find it difficult to understand why so simple a request goes unnoticed until the deadline has passed, especially when the survival of our department depends on ongoing analysis of these important files for our company.
 
 ### Revision
 
