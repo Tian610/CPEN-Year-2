@@ -14,24 +14,21 @@ public class AdditionClosure {
 				if(j==i) {
 					continue;
 				} else {
-
 					foundInt = (intList.get(i)+intList.get(j)) % n;
-
 					isValid = false;
+
 					for(int a = 0; a < intList.size(); a++) {
 						if(Math.abs(intList.get(a)-foundInt) % n == 0) {
 							isValid=true;
 							break;
 						}
 					}
-
 					if(!isValid) {
 						return false;
 					}
 				}
 			}
 		}
-
 		return true;
 	}	
 }
