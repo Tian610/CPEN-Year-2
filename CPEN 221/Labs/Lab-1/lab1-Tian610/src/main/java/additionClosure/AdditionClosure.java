@@ -14,7 +14,7 @@ public class AdditionClosure {
 				if(j==i) {
 					continue;
 				} else {
-
+//asd
 					foundInt = (intList.get(i)+intList.get(j)) % n;
 
 					isValid = false;
