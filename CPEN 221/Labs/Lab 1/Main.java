@@ -19,19 +19,19 @@ public class Main {
 
         // System.out.println("r = " + WirelessSignalStrength.rss(s,distance,x,a));
 
-        // String s = "ONION";
+        String s = "ONION";
 
-        // String[] x = StringChopping.allPossibleDicings(s);
+        String[] x = StringChopping.allPossibleDicings(s);
 
-        // for(int i = 0; i<x.length; i++) {
-        //     System.out.println(x[i]);
-        // }
+        for(int i = 0; i<x.length; i++) {
+            System.out.println(x[i]);
+        }
 
-        List<Integer> intList = new ArrayList<Integer>();
-        Collections.addAll(intList = new ArrayList<Integer>(), 0,1,100,50,50);
-        int n = 100;
+        // List<Integer> intList = new ArrayList<Integer>();
+        // Collections.addAll(intList = new ArrayList<Integer>(), 0,1,100,50,50);
+        // int n = 100;
 
-        boolean a = AdditionClosure.isClosed(intList, n);
-        System.out.println(a);
+        // boolean a = AdditionClosure.isClosed(intList, n);
+        // System.out.println(a);
     }
 }

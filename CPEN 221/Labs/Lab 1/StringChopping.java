@@ -1,5 +1,3 @@
-package stringchopping;
-
 import java.util.Arrays;
 
 public class StringChopping {
