@@ -1,3 +1,6 @@
 [submodule "CPEN 221/Labs/Lab 1/lab1-Tian610"]
 	path = CPEN 221/Labs/Lab 1/lab1-Tian610
 	url = https://github.com/CPEN-221-2024/lab1-Tian610.git
+[submodule "CPEN 221/Labs/Lab 2/lab2-Tian610"]
+	path = CPEN 221/Labs/Lab 2/lab2-Tian610
+	url = https://github.com/CPEN-221-2024/lab2-Tian610.git
