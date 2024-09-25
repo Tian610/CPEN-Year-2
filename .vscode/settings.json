@@ -1,11 +1,29 @@
 {
     "java.compile.nullAnalysis.mode": "disabled",
     "cSpell.words": [
+        "AAAGGTTACGAT",
+        "AAAGGTTACTG",
+        "AAAGGTTACTGA",
+        "ATCGGATTGATGCATGTA",
+        "ATCGGATTGATGCATGTAGGATTGATGCAT",
+        "ATCGGATTGCATGTAGGATTGCAT",
+        "ATCGGG",
+        "ATCGGGCATGTA",
+        "ATCGGGCATGTAGGGCAT",
+        "ATGCC",
+        "ATGCCAACATGGATGCCCGATAT",
+        "ATGCCAATCTGGTAG",
+        "ATTGAT",
+        "CCATGAAT",
+        "CGGGCA",
         "CPEN",
-        "denoise"
+        "CTATGGTAG",
+        "denoise",
+        "GGATTG",
+        "GGGCAT"
     ],
     "java.debug.settings.onBuildFailureProceed": true,
-    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.configuration.updateBuildConfiguration": "automatic",
     "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable",
     "java.checkstyle.configuration": "${workspaceFolder}\\checkstyle - NO MAGIC NUMBER.xml"
 }
