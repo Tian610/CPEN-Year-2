@@ -16,11 +16,14 @@
         "ATTGAT",
         "CCATGAAT",
         "CGGGCA",
+        "cond",
         "CPEN",
         "CTATGGTAG",
         "denoise",
         "GGATTG",
-        "GGGCAT"
+        "GGGCAT",
+        "unoptimized",
+        "Verilog"
     ],
     "java.debug.settings.onBuildFailureProceed": true,
     "java.configuration.updateBuildConfiguration": "automatic",
