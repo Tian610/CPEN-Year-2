@@ -192,3 +192,54 @@ module Majority( input [2:0] val, output out ) ;
                         (val==3'b011) ? 1'b1 : 1'b0 ;
 endmodule
 ```
+
+## **The Always Block**
+Two important things to know:
+
+1. What an always block is (syntax and meaning)
+2. *Rules* to ensure your always block Verilog code is *synthesizable* by CAD tools.
+
+The Always Block allows us to describe the function of a circuit without actually describing the hardware. Describing behaviour through english is ambiguous, so we turn to Always Block syntax to help us describe behaviour.
+
+```Verilog
+always @(<sensitivity_list>) begin
+<sequence of statements in which order matters>
+end
+```
+
+- Each always block describes the function of one block of hardware
+- When a signal in the **Sensitivity List** changes, statements inside the always block are evaluated one after another in order.
+- Sensitivity list is a light of signals separated by commas ( , ), "or", or asterisks ( * ).
+- The **Sensitivity List** is not to be confused with input parameters as one might find in a language like Java. Nothing is passed into the Always Block, it just determines *when* the block will be evaluated.
+- If only one statement is in the block, we can omit the `begin` and `end`.
+
+### **What goes inside an Always Block**
+
+- **For CPEN 211, `if`, `case`, `casex` statements! Do NOT use loops in always blocks!**
+- Use "begin" and "end" to group statements
+- Signals modified in an always block **Must** be declared as `reg` and not `wire`. This is a syntax rule, changes nothing about behaviour.
+  - Okay it gets a lil more confusing. Things that are declared must use `reg`. Things that are read can use `wire` or `reg`. As in `reg x = wire a` is legal.
+- Always Block outputs modified using "=" or "<=".
+- Do NOT use assign statements inside always block.
+
+### **If Statement**
+
+``` Verilog
+if (<condition expression>)
+    <statement>
+else <statement> 
+```
+
+Notes:
+1. Need to wrap `<statement>` in begin/end for multiple statements.
+2. When describing combinational logic using if statement need to include “else”.
+
+### **Case Statement**
+``` Verilog
+case (<selector>)
+ { <label list> : <statement> }+
+ default: <statement>
+ endcase
+```
+1. Need to wrap <statement> part in begin/end pair if you want multiple statements.
+2. When describing combinational logic with case statement need to include default (Why? See synthesis rules later in slide set).
