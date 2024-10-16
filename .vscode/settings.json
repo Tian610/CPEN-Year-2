@@ -25,6 +25,7 @@
         "smolboi",
         "testimage",
         "unoptimized",
+        "varaibles",
         "Verilog"
     ],
     "java.debug.settings.onBuildFailureProceed": true,

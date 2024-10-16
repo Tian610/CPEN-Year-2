@@ -81,11 +81,15 @@ endmodule
 Or, y'know, perhaps more intuitively:
 
 ```Verilog
-module Mux3a(a2, a1, a0, s, b) ; input [7:0] a0, a1, a2 ; // inputs
+module Mux3a(a2, a1, a0, s, b) ; 
+    input [7:0] a0, a1, a2 ; // inputs
     input [2:0] s ; // one-hot select output[7:0] b ; reg [7:0] b ;
-    always @(*) begin case(s) 3'b001: b = a0 ;
-    3'b010: b = a1 ;
-    3'b100: b = a2 ; default: b = {8{1'bx}} ; endcase
+    always @(*) begin 
+        case(s) 3'b001: b = a0 ;
+            3'b010: b = a1 ;
+            3'b100: b = a2 ; 
+            default: b = {8{1'bx}} ; 
+        endcase
     end
 endmodule
 ```
