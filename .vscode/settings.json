@@ -31,5 +31,6 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.checkstyle.configuration": "${workspaceFolder}\\checkstyle.xml",
-    "java.jdt.ls.vmargs": ""
+    "java.jdt.ls.vmargs": "",
+    "java.checkstyle.version": "10.18.2"
 }
