@@ -1,0 +1,21 @@
+|top_module
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => state~1.DATAIN
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => out[1]~reg0.ENA
+reset => out[0]~reg0.ENA
+in[0] => Equal0.IN1
+in[0] => Equal1.IN1
+in[0] => Equal2.IN0
+in[1] => Equal0.IN0
+in[1] => Equal1.IN0
+in[1] => Equal2.IN1
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,15 @@
+{C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1/q1.sv} {1 {vlog -work work -sv -stats=none {C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1/q1.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module top_module
+
+Top level modules:
+	top_module
+
+} {} {}} {C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1/q1_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1/q1_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}}

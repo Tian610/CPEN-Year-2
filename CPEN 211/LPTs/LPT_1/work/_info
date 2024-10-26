@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Quartus
+vtb
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1729900900
+!i10b 1
+!s100 80aD8WVdKN8lWeAYH84^Y3
+IN8;dDA1WE=WKLE<3gSi<?0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 q1_tb_sv_unit
+S1
+Z2 dC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1
+w1729900782
+8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1/q1_tb.sv
+FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1/q1_tb.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1729900900.000000
+!s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1/q1_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1/q1_tb.sv|
+!i113 1
+Z5 o-work work -sv
+Z6 tCvgOpt 0
+vtop_module
+R0
+!s110 1729900901
+!i10b 1
+!s100 XZ2>Rc7AAjaDU:Pi69`FB1
+IBYNQ3K1hUlzRCR`>YDmR41
+R1
+!s105 q1_sv_unit
+S1
+R2
+w1729900314
+8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1/q1.sv
+FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1/q1.sv
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1/q1.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/LPTs/LPT_1/q1.sv|
+!i113 1
+R5
+R6
