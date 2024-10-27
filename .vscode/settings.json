@@ -30,7 +30,7 @@
     ],
     "java.debug.settings.onBuildFailureProceed": true,
     "java.configuration.updateBuildConfiguration": "automatic",
-    "java.checkstyle.configuration": "${workspaceFolder}\\checkstyle.xml",
+    "java.checkstyle.configuration": "${workspaceFolder}\\checkstyle - NO MAGIC NUMBER.xml",
     "java.jdt.ls.vmargs": "",
-    "java.checkstyle.version": "10.18.2"
+    "java.checkstyle.version": "10.19.0"
 }
