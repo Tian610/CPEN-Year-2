@@ -28,3 +28,6 @@
 [submodule "CPEN 221/PPT/ppt1-Tian610-2"]
 	path = CPEN 221/PPT/ppt1-Tian610-2
 	url = https://github.com/CPEN-221-2024/ppt1-Tian610-2.git
+[submodule "CPEN 221/GradMap/project-meriadoc-gradmap"]
+	path = CPEN 221/GradMap/project-meriadoc-gradmap
+	url = https://github.com/CPEN-221-2024/project-meriadoc-gradmap.git
