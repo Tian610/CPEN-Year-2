@@ -10,7 +10,7 @@ cModel Technology
 dD:/Quartus
 vALU
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1731536335
+Z1 !s110 1731821591
 !i10b 1
 !s100 :N>Z;jYjzA2Mj0bo8zmz_3
 IRgDEUB0XYZKmQjDDGS<UE0
@@ -26,7 +26,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1731536335.000000
+Z5 !s108 1731821591.000000
 !s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/alu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/alu.sv|
 !i113 1
@@ -58,27 +58,75 @@ R5
 R6
 R7
 n@a@l@u_tb
+vcpu
+R0
+Z8 !s110 1731821592
+!i10b 1
+!s100 I<5KagT`V?ooUGg>IaDJk1
+IQ0Km?[?5_SdKa>I>i2QOO2
+R2
+Z9 !s105 cpu_sv_unit
+S1
+R3
+Z10 w1731821104
+Z11 8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/cpu.sv
+Z12 FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/cpu.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z13 !s108 1731821592.000000
+Z14 !s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/cpu.sv|
+Z15 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/cpu.sv|
+!i113 1
+R6
+R7
+vcpu_tb
+R0
+R8
+!i10b 1
+!s100 gFJXj;VF8DmX0=8e=n1][0
+IJ[m0UfHAVBzkcFbHaMaKk3
+R2
+!s105 cpu_tb_sv_unit
+S1
+R3
+w1731821408
+8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/cpu_tb.sv
+FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/cpu_tb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/cpu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/cpu_tb.sv|
+!i113 1
+R6
+R7
 vdatapath
 R0
 R1
 !i10b 1
-!s100 @1Ika=^R<2U<mV;Z;DWCU0
-Ik3cjalY9zLaDPaa_c>lV]0
+!s100 QdW>DP_Fc[3W[7aQ53i<O0
+IP]fn_ikJoCD?VlSK0XceO2
 R2
-Z8 !s105 datapath_sv_unit
+Z16 !s105 datapath_sv_unit
 S1
 R3
-Z9 w1731536285
-Z10 8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/datapath.sv
-Z11 FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/datapath.sv
+Z17 w1731821113
+Z18 8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/datapath.sv
+Z19 FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/datapath.sv
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-Z12 !s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/datapath.sv|
-Z13 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/datapath.sv|
+Z20 !s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/datapath.sv|
+Z21 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/datapath.sv|
 !i113 1
 R6
 R7
@@ -108,50 +156,98 @@ R6
 R7
 vDecoder38
 R0
-R1
+R8
 !i10b 1
 !s100 1R`J3X7?^JU[gjg2>k9`U1
 I2f]5WOWaGBeA9mHS2;PRF3
 R2
-Z14 !s105 regfile_sv_unit
+Z22 !s105 regfile_sv_unit
 S1
 R3
-Z15 w1731532132
-Z16 8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/regfile.sv
-Z17 FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/regfile.sv
+Z23 w1731532132
+Z24 8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/regfile.sv
+Z25 FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/regfile.sv
 L0 59
 R4
 r1
 !s85 0
 31
 R5
-Z18 !s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/regfile.sv|
-Z19 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/regfile.sv|
+Z26 !s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/regfile.sv|
+Z27 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/regfile.sv|
 !i113 1
 R6
 R7
 n@decoder38
+vfsm
+R0
+R8
+!i10b 1
+!s100 OD2cN`]X6GBJY8R=c<^AS2
+IdMzhAWCoheN]00e1Al93Y0
+R2
+!s105 fsm_sv_unit
+S1
+R3
+w1731821577
+8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/fsm.sv
+FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/fsm.sv
+L0 22
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/fsm.sv|
+!i113 1
+R6
+R7
+vfsm_tb
+R0
+R8
+!i10b 1
+!s100 m?hZe=D7CP6H?;Hz9Jz3R3
+IV0D_OGk7;1m?:oKj`IYJB2
+R2
+!s105 fsm_tb_sv_unit
+S1
+R3
+w1731788623
+8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/fsm_tb.sv
+FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/fsm_tb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/fsm_tb.sv|
+!i113 1
+R6
+R7
 vinput_iface
 R0
 R1
 !i10b 1
-!s100 nE<>iUc1RQoXZ7BTY4A=e1
-IAn8NG>:OlLTo[?l472L;K1
+!s100 250:K6Fa0H><Y@5nM;cWm2
+I@3c3nD?d8YXOm4eak<hMY0
 R2
-Z20 !s105 lab6_top_sv_unit
+Z28 !s105 lab6_top_sv_unit
 S1
 R3
-Z21 w1731532703
-Z22 8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/lab6_top.sv
-Z23 FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/lab6_top.sv
-L0 68
+Z29 w1731819686
+Z30 8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/lab6_top.sv
+Z31 FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/lab6_top.sv
+L0 87
 R4
 r1
 !s85 0
 31
 R5
-Z24 !s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/lab6_top.sv|
-Z25 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/lab6_top.sv|
+Z32 !s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/lab6_top.sv|
+Z33 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/lab6_top.sv|
 !i113 1
 R6
 R7
@@ -165,7 +261,7 @@ R2
 !s105 lab6_autograder_check_sv_unit
 S1
 R3
-R21
+w1731532703
 8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/lab6_autograder_check.sv
 FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/lab6_autograder_check.sv
 L0 11
@@ -183,23 +279,23 @@ vlab6_top
 R0
 R1
 !i10b 1
-!s100 [>Kz[BaFQ3n^A;62HG2^^1
-IiL9U0JTWij1F^d6]65;Ne2
+!s100 P`WRBV5n<_F^[hG=`@48Z1
+IT3dHf07Qa8>@FC4dGkbWW3
 R2
-R20
+R28
 S1
 R3
-R21
-R22
-R23
-L0 32
+R29
+R30
+R31
+L0 51
 R4
 r1
 !s85 0
 31
 R5
-R24
-R25
+R32
+R33
 !i113 1
 R6
 R7
@@ -207,54 +303,54 @@ vMux4
 R0
 R1
 !i10b 1
-!s100 >4NzX`PagAG>GQVQYAPPC1
-I<0B6_A4PkJRBUebUH=KU=2
+!s100 z:8UlT<Bf7:T4daR>84HW1
+IVQ5Ak^iSNg0J03ej4F<e21
 R2
-R8
+R16
 S1
 R3
-R9
-R10
-R11
-L0 74
+R17
+R18
+R19
+L0 73
 R4
 r1
 !s85 0
 31
 R5
-R12
-R13
+R20
+R21
 !i113 1
 R6
 R7
 n@mux4
 vregfile
 R0
-R1
+R8
 !i10b 1
 !s100 0>SA[XP=C`^>=:2=[_EVb3
 I]<Ok:KDRI]chVA?_Mcl;P2
 R2
-R14
+R22
 S1
 R3
-R15
-R16
-R17
+R23
+R24
+R25
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-R18
-R19
+R26
+R27
 !i113 1
 R6
 R7
 vregfile_tb
 R0
-R1
+R8
 !i10b 1
 !s100 O4lCP5mmVQDEJ<iZS_mA]1
 IDGY_G9PaS6n=B=QEk7Mee1
@@ -262,7 +358,7 @@ R2
 !s105 regfile_tb_sv_unit
 S1
 R3
-R15
+R23
 8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/regfile_tb.sv
 FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/regfile_tb.sv
 L0 1
@@ -270,15 +366,40 @@ R4
 r1
 !s85 0
 31
-R5
+R13
 !s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/regfile_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/regfile_tb.sv|
 !i113 1
 R6
 R7
+vRISCdecoder
+R0
+R8
+!i10b 1
+!s100 n4FZZ@?:R04aQLb>fL6dj0
+Ik8:e_YLZWXAh4^oSRz^[L3
+R2
+R9
+S1
+R3
+R10
+R11
+R12
+L0 43
+R4
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 1
+R6
+R7
+n@r@i@s@cdecoder
 vshifter
 R0
-R1
+R8
 !i10b 1
 !s100 g:A3Xh3W9S;<iO7X?;e:j0
 I6iWbgeVEW;Q<0CRzBaOcM1
@@ -286,7 +407,7 @@ R2
 !s105 shifter_sv_unit
 S1
 R3
-R15
+R23
 8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/shifter.sv
 FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/shifter.sv
 L0 1
@@ -294,7 +415,7 @@ R4
 r1
 !s85 0
 31
-R5
+R13
 !s107 C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/shifter.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/shifter.sv|
 !i113 1
@@ -310,7 +431,7 @@ R2
 !s105 shifter_tb_sv_unit
 S1
 R3
-R15
+R23
 8C:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/shifter_tb.sv
 FC:/Users/tianx/Documents/GitHub/CPEN-Year-2/CPEN 211/Labs/Lab 6/lab-6-l1c-Tian610/shifter_tb.sv
 L0 1
@@ -328,23 +449,23 @@ vsseg
 R0
 R1
 !i10b 1
-!s100 K8i9JJ?<NReaY>3H9GUWH3
-IM7gb7ZBS^iV_PF5T^Omz03
+!s100 QN>8EhAaFN9MzMcJ9[DnM3
+I>FLD3H6Il=Jja[el><dPk2
 R2
-R20
+R28
 S1
 R3
-R21
-R22
-R23
-L0 96
+R29
+R30
+R31
+L0 115
 R4
 r1
 !s85 0
 31
 R5
-R24
-R25
+R32
+R33
 !i113 1
 R6
 R7
@@ -352,48 +473,48 @@ vvDFF
 R0
 R1
 !i10b 1
-!s100 W^Eg0=nzhAPaf[HIhfDbB2
-In<UNW`I?N`QSE>]2A1:6g2
+!s100 HO765SeMeTPI?]aooYiJ=2
+I8i`ln3RQ2h_k[8<D=8S801
 R2
-R20
+R28
 S1
 R3
-R21
-R22
-R23
-L0 79
+R29
+R30
+R31
+L0 98
 R4
 r1
 !s85 0
 31
 R5
-R24
-R25
+R32
+R33
 !i113 1
 R6
 R7
 nv@d@f@f
 vvDFFE
 R0
-R1
+R8
 !i10b 1
 !s100 oXBST9n@0RO>Fn0JVMiTZ3
 IZG_RLmbjUR6<AiclhkUQC3
 R2
-R14
+R22
 S1
 R3
-R15
-R16
-R17
+R23
+R24
+R25
 L0 45
 R4
 r1
 !s85 0
 31
 R5
-R18
-R19
+R26
+R27
 !i113 1
 R6
 R7
