@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "cpen221.stablematching.Main",
+            "projectName": "lab11-Tian610"
+        },
+        {
+            "type": "java",
             "name": "DocumentMetricsServer",
             "request": "launch",
             "mainClass": "documentmetrics.server.DocumentMetricsServer",
