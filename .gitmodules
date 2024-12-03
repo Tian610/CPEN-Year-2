@@ -43,3 +43,9 @@
 [submodule "CPEN 211/Labs/Lab 7/lab-7-l1c-Tian610"]
 	path = CPEN 211/Labs/Lab 7/lab-7-l1c-Tian610
 	url = https://github.com/ubc-cpen211/lab-7-l1c-Tian610.git
+[submodule "CPEN 221/Mini Projects/mp3-Tian610"]
+	path = CPEN 221/Mini Projects/mp3-Tian610
+	url = https://github.com/CPEN-221-2024/mp3-Tian610.git
+[submodule "CPEN 221/Labs/Lab 11/lab11-Tian610"]
+	path = CPEN 221/Labs/Lab 11/lab11-Tian610
+	url = https://github.com/CPEN-221-2024/lab11-Tian610.git
