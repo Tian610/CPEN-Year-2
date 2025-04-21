@@ -4,7 +4,6 @@
           "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
 
 <!--
-
   Checkstyle configuration for CPEN 221.  Modified from sun_checks.xml, which checks the sun coding conventions from:
 
     - the Java Language Specification at
